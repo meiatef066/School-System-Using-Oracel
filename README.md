@@ -67,7 +67,7 @@ Record and monitor student grades with defined constraints.
 ![Normalization](https://github.com/user-attachments/assets/0c4368e0-6e64-456f-aeb6-d4356254d91e)
 
 
-## GUI
+## GUI Using Oracle Forms And Reports
 ## Home Page
 ![homePage](https://github.com/user-attachments/assets/1081332a-9e2d-4bf0-8120-d9e0f7d29eab)
 
