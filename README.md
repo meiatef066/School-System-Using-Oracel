@@ -67,3 +67,21 @@ Record and monitor student grades with defined constraints.
 ![Normalization](https://github.com/user-attachments/assets/0c4368e0-6e64-456f-aeb6-d4356254d91e)
 
 
+## GUI
+## Home Page
+![homePage](https://github.com/user-attachments/assets/1081332a-9e2d-4bf0-8120-d9e0f7d29eab)
+
+## add new student
+![registerNewStudent](https://github.com/user-attachments/assets/85bf59bf-d36a-408b-b346-5cfebd688002)
+
+## student data and report about grades
+![student information](https://github.com/user-attachments/assets/3e51e698-7bcc-4c24-8ddf-4f1d4e779641)
+
+## Subjects information
+![subject data](https://github.com/user-attachments/assets/9e65071a-94a3-40f5-ad94-d3a2bc25df9c)
+
+## Department information
+![teacher for each departmnt](https://github.com/user-attachments/assets/d9416678-0b53-43d7-bd12-c9c12b5768a8)
+
+## teacher information
+![teacher info](https://github.com/user-attachments/assets/cb945921-64fa-488d-929b-f2b8432fb5b3)
