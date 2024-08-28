@@ -1,4 +1,4 @@
-# school-data-base-project-by-forms-and-reports-
+# school data base project by forms and reports
 ## Project Overview
 The School Database Project is designed to manage and organize essential school data, including information about students,
 teachers, departments, grades, and subjects. The database schema ensures data integrity, consistency, and efficient retrieval, 
