@@ -1,23 +1,23 @@
 # school-data-base-project-by-forms-and-reports-
-# # # Project Overview
+## Project Overview
 The School Database Project is designed to manage and organize essential school data, including information about students,
 teachers, departments, grades, and subjects. The database schema ensures data integrity, consistency, and efficient retrieval, 
 making it easier to handle various school operations.
 
-# Project Structure
+## Project Structure
 The database consists of the following tables:
 
-# Departments (departments):
+### Departments (departments):
 Stores department details.
 Primary Key: dept_id.
 
-# Students (students):
+### Students (students):
 Stores student information, including their department, name, phone number, date of birth, and email.
 Primary Key: student_id.
 Foreign Key: dep_id references dept_id in departments.
 Unique Constraint: email.
 
-# Grades (grades):
+### Grades (grades):
 Stores grade categories.
 Primary Key: grade_id.
 
