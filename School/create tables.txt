@@ -1,0 +1,63 @@
+CREATE TABLE "departments" (
+    "dept_id" NUMBER(10) CONSTRAINT pk_dept PRIMARY KEY,
+    "dept_name" VARCHAR2(255) NOT NULL
+);
+
+
+
+CREATE TABLE "students" (
+    "student_id" NUMBER(10) CONSTRAINT pk_student PRIMARY KEY,
+    "dep_id" NUMBER(10),
+    "name" VARCHAR2(255) NOT NULL,
+    "phone_number" varchar2(13) NOT NULL,
+    "date_of_birth" DATE NOT NULL,
+    "email" varchar2(255) NOT NULL UNIQUE,
+    CONSTRAINT fk_student FOREIGN KEY ("dep_id") REFERENCES "departments"("dept_id")
+);
+
+
+
+CREATE TABLE "grades" (
+    "grade_id" NUMBER(10) CONSTRAINT pk_grade PRIMARY KEY,
+    "grade_name" VARCHAR2(255) NOT NULL
+);
+
+
+CREATE TABLE "student_grade" (
+    "student_id" NUMBER(10),
+    "grade_id" NUMBER(10),
+    "grade_value" NUMBER(3),
+    CONSTRAINT fk_student_grade1 FOREIGN KEY ("student_id") REFERENCES "students"("student_id"),
+    CONSTRAINT fk_student_grade2 FOREIGN KEY ("grade_id") REFERENCES "grades"("grade_id"),
+    CONSTRAINT chk_grade_value CHECK ("grade_value" <= 100 AND "grade_value" >= 50),
+    CONSTRAINT pk_student_grade PRIMARY KEY("student_id", "grade_id")
+);
+
+
+CREATE TABLE "teachers" (
+    "teacher_id" NUMBER(10) CONSTRAINT pk_teachers PRIMARY KEY,
+    "name" VARCHAR2(255) NOT NULL,
+    "email" VARCHAR2(255) NOT NULL UNIQUE,
+    "phone_number" VARCHAR2(255) NOT NULL UNIQUE,
+    "dept_id" NUMBER(10),
+    CONSTRAINT fk_teachers FOREIGN KEY ("dept_id") REFERENCES "departments"("dept_id")
+);
+
+
+CREATE TABLE "subjects" (
+    "sub_id" NUMBER(10) CONSTRAINT pk_subjects PRIMARY KEY,
+    "sub_name" VARCHAR2(255) NOT NULL UNIQUE,
+    "teacher_id" NUMBER(10),
+    "dep_id" NUMBER(10),
+    CONSTRAINT fk_subjects1 FOREIGN KEY ("teacher_id") REFERENCES "teachers"("teacher_id"),
+    CONSTRAINT fk_subjects2 FOREIGN KEY ("dep_id") REFERENCES "departments"("dept_id")
+);
+
+
+CREATE TABLE "dept_sub" (
+    "dept_id" NUMBER(10),
+    "sub_id" NUMBER(10),
+    CONSTRAINT fk_dept_sub1 FOREIGN KEY ("dept_id") REFERENCES "departments"("dept_id"),
+    CONSTRAINT fk_dept_sub2 FOREIGN KEY ("sub_id") REFERENCES "subjects"("sub_id"),
+    CONSTRAINT pk_dept_sub PRIMARY KEY ("dept_id","sub_id")
+);
