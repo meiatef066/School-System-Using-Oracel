@@ -60,8 +60,7 @@ Assign subjects to departments and teachers.
 ### Grade Tracking:
 Record and monitor student grades with defined constraints.
 
-### School ERD 
-![Entity reltion ship digram ](https://github.com/user-attachments/assets/0812b446-5fb0-41fd-978d-708382e4a575)
+
 
 ### School Normalization
 ![Normalization](https://github.com/user-attachments/assets/0c4368e0-6e64-456f-aeb6-d4356254d91e)
