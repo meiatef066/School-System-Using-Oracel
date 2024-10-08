@@ -63,7 +63,7 @@ Record and monitor student grades with defined constraints.
 
 
 ### School Normalization
-![Normalization](https://github.com/user-attachments/assets/0c4368e0-6e64-456f-aeb6-d4356254d91e)
+
 
 
 ## GUI Using Oracle Forms And Reports
