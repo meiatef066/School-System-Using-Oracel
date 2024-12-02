@@ -1,4 +1,4 @@
-# school System
+# school System by oracle database and forms and reports of oracle
 ## Project Overview
 The School Database Project is designed to manage and organize essential school data, including information about students,
 teachers, departments, grades, and subjects. The database schema ensures data integrity, consistency, and efficient retrieval, 
